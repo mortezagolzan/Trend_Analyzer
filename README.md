@@ -1,63 +1,65 @@
 # Trend Analyzer
 
-A Streamlit application that analyzes trends from Twitter and Reddit using AI-powered text processing and summarization.
+An application that analyzes trends and provides AI-powered insights using advanced LLM (Large Language Model) technologies. This project demonstrates practical implementation of various LLM tools and techniques for natural language processing and analysis.
 
 ## Features
 
-- Real-time trend analysis from Twitter and Reddit
-- AI-powered text processing and summarization
+- AI-powered text processing and analysis
 - Interactive chat interface for asking questions
 - Source citations with detailed metadata
 - Caching system for improved performance
-- Beautiful and responsive UI
+- Beautiful and responsive UI built with Streamlit
+- Vector storage for efficient data retrieval
+- LangChain integration for advanced LLM operations
+- Dynamic word cloud visualization based on retrieved content
+
+## Technologies & Tools Used
+
+- **LangChain**: For building LLM-powered applications and managing complex chains of operations
+- **Vector Databases**: For efficient storage and retrieval of embeddings
+- **Streamlit**: For creating an interactive and responsive web interface
+- **WordCloud**: For generating dynamic word visualizations
 
 ## Setup
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
-cd trend-analyzer
+git clone https://github.com/mortezagolzan/Trend_Analyzer.git
+cd Trend_Analyzer
 ```
 
-2. Create a virtual environment and activate it:
+2. Install dependencies using Pipenv:
 ```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+pipenv install
 ```
 
-3. Install the required packages:
-```bash
-pip install -r requirements.txt
-```
-
-4. Create a `.env` file in the project root with your API keys:
+3. Create a `.env` file in the project root with your API keys:
 ```
 OPENAI_API_KEY=your_openai_api_key_here
-REDDIT_CLIENT_ID=your_reddit_client_id_here
-REDDIT_CLIENT_SECRET=your_reddit_client_secret_here
-REDDIT_USER_AGENT=your_reddit_user_agent_here
 ```
 
-5. Run the application:
+4. Run the application:
 ```bash
-streamlit run app.py
+pipenv run streamlit run app.py
 ```
 
-## Usage
+## Project Structure
 
-1. Enter a topic or keyword to analyze
-2. Select the data source (Twitter, Reddit, or Auto)
-3. Choose a date range (optional)
-4. Click "Analyze Trends" to start the analysis
-5. View the generated summary and key insights
-6. Use the chat interface to ask questions about the topic
+```
+trend_analyzer/
+├── app.py              # Main Streamlit application
+├── core/              # Core functionality and business logic
+├── scrapers/          # Data collection modules
+├── data/              # Data storage and processing
+│   └── .gif file     # demo
+├── requirements.txt   # Project dependencies
+└── README.md         # Project documentation
+```
 
-## Caching
+## Demo
 
-The application includes a caching system to improve performance:
-- Results are cached based on the topic, source, and date range
-- Caching can be enabled/disabled in the sidebar settings
-- Cache files are stored in the `.cache` directory
+
+
 
 ## Contributing
 
