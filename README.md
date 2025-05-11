@@ -1,6 +1,6 @@
 # Trend Analyzer
 
-An application that analyzes trends and provides AI-powered insights using advanced LLM (Large Language Model) technologies. This project demonstrates practical implementation of various LLM tools and techniques for natural language processing and analysis.
+An application that analyzes trends and provides AI-powered insights using LLM. This project demonstrates a practical implementation of LLM using LangChain.
 
 ![Trend Analyzer Demo](data/demo.gif)
 
@@ -10,7 +10,6 @@ An application that analyzes trends and provides AI-powered insights using advan
 - Interactive chat interface for asking questions
 - Source citations with detailed metadata
 - Caching system for improved performance
-- Beautiful and responsive UI built with Streamlit
 - Vector storage for efficient data retrieval
 - LangChain integration for advanced LLM operations
 - Dynamic word cloud visualization based on retrieved content
@@ -38,6 +37,9 @@ pipenv install
 3. Create a `.env` file in the project root with your API keys:
 ```
 OPENAI_API_KEY=your_openai_api_key_here
+REDDIT_CLIENT_ID=*
+REDDIT_CLIENT_SECRET=*
+REDDIT_USER_AGENT=*
 ```
 
 4. Run the application:
