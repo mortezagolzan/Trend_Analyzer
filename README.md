@@ -58,10 +58,6 @@ trend_analyzer/
 └── README.md         # Project documentation
 ```
 
-## Demo
-
-
-
 
 ## Contributing
 
