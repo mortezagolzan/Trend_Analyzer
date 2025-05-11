@@ -2,7 +2,8 @@
 
 An application that analyzes trends and provides AI-powered insights using advanced LLM (Large Language Model) technologies. This project demonstrates practical implementation of various LLM tools and techniques for natural language processing and analysis.
 
-[Trend Analyzer Demo](data/demo.gif)
+![Trend Analyzer Demo](data/demo.gif)
+
 ## Features
 
 - AI-powered text processing and analysis
@@ -56,10 +57,6 @@ trend_analyzer/
 ├── requirements.txt   # Project dependencies
 └── README.md         # Project documentation
 ```
-
-## Demo
-
-
 
 
 ## Contributing
