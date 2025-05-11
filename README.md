@@ -1,6 +1,6 @@
 # Trend Analyzer
 
-An application that analyzes trends and provides AI-powered insights using LLM. This project demonstrates a practical implementation of LLM using LangChain.
+A powerful application that analyzes trends and delivers AI-driven insights using LLM and LangChain. Users can interactively ask follow-up questions based on the insights, and if a query extends beyond the retrieved data, the system automatically searches online to provide relevant answers.
 
 ![Trend Analyzer Demo](data/demo.gif)
 
